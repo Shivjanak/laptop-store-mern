@@ -19,7 +19,7 @@ function AdminOrders() {
 
   const updateStatus = async (orderId, status) => {
     await axios.put(
-      `http://localhost:5000/api/orders/${orderId}/status`,
+      `https://laptop-store-mern.onrender.com/api/orders/${orderId}/status`,
       { status },
       {
         headers: {

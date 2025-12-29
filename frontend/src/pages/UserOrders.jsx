@@ -10,7 +10,7 @@ function UserOrders() {
 
   const fetchOrders = async () => {
     const res = await axios.get(
-      "http://localhost:5000/api/orders/my-orders",
+      "https://laptop-store-mern.onrender.com/api/orders/my-orders",
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("userToken")}`

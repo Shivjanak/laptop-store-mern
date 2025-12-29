@@ -35,7 +35,7 @@ function AdminDashboard() {
   /* ================= FETCH LAPTOPS ================= */
   const fetchLaptops = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/laptops");
+      const res = await axios.get("https://laptop-store-mern.onrender.com/api/laptops");
       setLaptops(res.data);
     } catch (err) {
       console.error("Laptop fetch error", err);
@@ -68,8 +68,8 @@ function AdminDashboard() {
   }
 
   const url = editingId
-    ? `http://localhost:5000/api/laptops/${editingId}`
-    : "http://localhost:5000/api/laptops";
+    ? `https://laptop-store-mern.onrender.com/api/laptops/${editingId}`
+    : "https://laptop-store-mern.onrender.com/api/laptops";
 
   const method = editingId ? "put" : "post";
 
@@ -91,7 +91,7 @@ function AdminDashboard() {
   const deleteLaptop = async (id) => {
     if (!window.confirm("Delete this laptop?")) return;
 
-    await axios.delete(`http://localhost:5000/api/laptops/${id}`, {
+    await axios.delete(`https://laptop-store-mern.onrender.com/api/laptops/${id}`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("adminToken")}`
       }

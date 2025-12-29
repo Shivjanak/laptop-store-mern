@@ -35,7 +35,7 @@ function Checkout() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/orders",
+        "https://laptop-store-mern.onrender.com/api/orders",
         {
           orderItems: cart.map((item) => ({
             laptop: item._id,

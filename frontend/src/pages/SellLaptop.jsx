@@ -34,7 +34,7 @@ function SellLaptop() {
       data.append("image", image);             // ✅ MATCH upload.single("image")
 
       await axios.post(
-        "http://localhost:5000/api/sell",
+        "https://laptop-store-mern.onrender.com/api/sell",
         data,
         {
           headers: {

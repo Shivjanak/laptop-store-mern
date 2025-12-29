@@ -35,7 +35,7 @@ function EditLaptop() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/laptops/${id}`,
+        `https://laptop-store-mern.onrender.com/api/laptops/${id}`,
         formData,
         {
           headers: {

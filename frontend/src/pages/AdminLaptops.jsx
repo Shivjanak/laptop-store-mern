@@ -17,7 +17,7 @@ function AdminLaptops() {
   }, [navigate]);
 
   const fetchLaptops = async () => {
-    const res = await axios.get("http://localhost:5000/api/laptops");
+    const res = await axios.get("https://laptop-store-mern.onrender.com/api/laptops");
     setLaptops(res.data);
   };
 
@@ -25,7 +25,7 @@ function AdminLaptops() {
     if (!window.confirm("Are you sure you want to delete this laptop?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/laptops/${id}`, {
+      await axios.delete(`https://laptop-store-mern.onrender.com/api/laptops/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("adminToken")}`
         }

@@ -39,7 +39,7 @@ function AdminSellRequests() {
     >
       {/* ✅ IMAGE SECTION */}
       <img
-        src={`http://localhost:5000/${req.image}`}
+        src={`https://laptop-store-mern.onrender.com/api/${req.image}`}
         alt={req.name}
         className="h-40 w-40 object-contain border rounded bg-gray-100"
       />

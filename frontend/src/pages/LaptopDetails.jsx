@@ -11,7 +11,7 @@ function LaptopDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/laptops/${id}`)
+      .get(`https://laptop-store-mern.onrender.com/api/laptops/${id}`)
       .then((res) => setLaptop(res.data))
       .catch((err) => console.error(err));
   }, [id]);

@@ -63,7 +63,7 @@ function AddLaptop() {
       setLoading(true);
 
       await axios.post(
-        "http://localhost:5000/api/laptops",
+        "https://laptop-store-mern.onrender.com/api/laptops",
         data,
         {
           headers: {

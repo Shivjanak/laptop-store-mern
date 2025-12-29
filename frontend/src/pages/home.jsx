@@ -33,7 +33,7 @@ function Home() {
   }, []);
 
   const loadLaptops = async () => {
-    const res = await axios.get("http://localhost:5000/api/laptops");
+    const res = await axios.get("https://laptop-store-mern.onrender.com/api/laptops");
     setLaptops(res.data);
   };
 
