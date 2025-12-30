@@ -9,7 +9,7 @@ function AdminSellRequests() {
   }, []);
 
   const fetchRequests = async () => {
-    const res = await axios.get("http://localhost:5000/api/sell", {
+    const res = await axios.get("https://laptop-store-mern.onrender.com/api/sell", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("adminToken")}`
       }
