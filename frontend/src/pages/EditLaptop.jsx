@@ -22,7 +22,7 @@ function EditLaptop() {
     }
 
     axios
-      .get(`http://localhost:5000/api/laptops/${id}`)
+      .get(`https://laptop-store-mern.onrender.com/api/laptops/${id}`)
       .then((res) => setFormData(res.data));
   }, [id, navigate]);
 
