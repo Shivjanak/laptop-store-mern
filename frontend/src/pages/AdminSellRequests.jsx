@@ -19,7 +19,7 @@ function AdminSellRequests() {
 
   const updateStatus = async (id, status) => {
     await axios.put(
-      `http://localhost:5000/api/sell/${id}/status`,
+      `https://laptop-store-mern.onrender.com/api/sell/${id}/status`,
       { status },
       {
         headers: {
